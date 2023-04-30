@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" href="../CSS/registration.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    </head>
+    <body>
+        <div class="hero">
+            <div class="form-box">   
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toogle-btn" onclick="register()">REGISTER</button>
+                    <!-- <button type="button" class="toogle-btn" onclick="register()">REGISTER</button> -->
+                </div>
+                <div class="social-icons">
+                    <img src="../CSS/tw.png">
+                    <img src="../CSS/gp.png">
+                    <img src="../CSS/fb.png">
+                </div>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="First Name" required>
+                    <input type="text" class="input-field" placeholder="Last Name" required>
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                    <input type="text" class="input-field" placeholder="Confirm Password" required>
+                    <input type="int" class="input-field" placeholder="Enter Mobile Number" required>
+                    <div>
+                        <label>Attach file</label>
+                        <div>
+                          <input type="file" id>
+                        </div>
+                      </div>
+                    <!-- <input type="checkbox" class="checkbox"><span>Remember Password</span> -->
+                    <button type="sumbit" class="submit-btn">Register</button>
+                </form>
+                <!-- <form id="register" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions</span>
+                    <button type="sumbit" class="submit-btn">Register</button>
+                </form> -->
+                </div>
+            </div>
+            <script>
+                var x = document.getElementById("login");
+                // var y = document.getElementById("register");
+                var z = document.getElementById("btn");
+
+                function register(){
+                    x.style.left = "-400px"
+                    y.style.left = "50px"
+                    z.style.left = "110px"
+                }
+
+                function login(){
+                    x.style.left = "50px"
+                    y.style.left = "450px"
+                    z.style.left = "0"
+                }
+
+            </script>
+
+        
+    </body>
+</html>
